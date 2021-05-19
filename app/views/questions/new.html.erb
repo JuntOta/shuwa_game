@@ -1,13 +1,20 @@
 <div class="qestion_create">
   <div class="container">
     <h3>クイズ作成</h3>
-    <%= form_with(model: @question, local: true) do |form| %>
-      <%= form.text_area :correct, placeholder: "正解" %>
-      <%= form.text_area :wrong_1, placeholder: "間違い" %>
-      <%= form.text_area :wrong_2, placeholder: "間違い" %>
-      <%= form.text_area :wrong_3, placeholder: "間違い" %>
-      <%= form.text_area :hint, placeholder: "ヒント" %>
-      <%= form.submit "作成" %>
+    <%= form_with(model: @question, local: true) do |f| %>
+      <%= f.label :video, "動画" %><br />
+      <%= f.file_field :video %>
+      <%= f.label :correct, "正解" %><br />
+      <%= f.text_area :correct, placeholder: "正解" %>
+      <%= f.label :wrong_1, "間違い" %><br />
+      <%= f.text_area :wrong_1, placeholder: "間違い" %>
+      <%= f.label :wrong_2, "間違い" %><br />
+      <%= f.text_area :wrong_2, placeholder: "間違い" %>
+      <%= f.label :wrong_3, "間違い" %><br />
+      <%= f.text_area :wrong_3, placeholder: "間違い" %>
+      <%= f.label :hint, "ヒント" %><br />
+      <%= f.text_area :hint, placeholder: "ヒント" %>
+      <%= f.submit "作成" %>
     <% end %>
   </div>
 </div>
