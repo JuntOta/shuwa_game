@@ -7,6 +7,5 @@ class Question < ApplicationRecord
     validates :hint
     validates :video
   end
-
-  
+  has_one_attached :video
 end
