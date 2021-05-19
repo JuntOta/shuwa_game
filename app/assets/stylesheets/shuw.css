@@ -1,0 +1,28 @@
+
+.body,html{
+  height: 100vh;
+}
+
+.main{
+  height: 100%;
+}
+
+.titile_contents{
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.title{
+}
+
+.items{
+  height: 100vh - 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btns{
+}
