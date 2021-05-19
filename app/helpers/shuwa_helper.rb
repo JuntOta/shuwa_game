@@ -1,0 +1,2 @@
+module ShuwaHelper
+end
