@@ -1,0 +1,13 @@
+<div class="qestion_create">
+  <div class="container">
+    <h3>クイズ作成</h3>
+    <%= form_with(model: @question, local: true) do |form| %>
+      <%= form.text_area :correct, placeholder: "正解" %>
+      <%= form.text_area :wrong_1, placeholder: "間違い" %>
+      <%= form.text_area :wrong_2, placeholder: "間違い" %>
+      <%= form.text_area :wrong_3, placeholder: "間違い" %>
+      <%= form.text_area :hint, placeholder: "ヒント" %>
+      <%= form.submit "作成" %>
+    <% end %>
+  </div>
+</div>

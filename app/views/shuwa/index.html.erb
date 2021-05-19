@@ -7,7 +7,12 @@
 
   <div class = "items">
     <div class = "btns">
-      <%= link_to 'START', "#", class: "atart_btn" %>
+      <div class = "start_btn">
+        <%= link_to 'START', questions_path, class: "start_white_btn" %>
+      </div>
+      <div class = "create_btn">
+        <%= link_to 'クイズ作成', new_question_path, class: "create_white_btn" %>
+      </div>
     </div>
   </div>
 </div>

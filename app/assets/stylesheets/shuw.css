@@ -19,10 +19,17 @@
 
 .items{
   height: 100vh - 70vh;
+}
+
+.start_btn{
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.btns{
+
+.create_btn{
+  text-align: right;
+  margin-right: 5vw;
+  margin-top: 150px;
 }
