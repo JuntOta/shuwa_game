@@ -1,5 +1,7 @@
-<%= @question.correct %>
-<%= @question.wrong_1 %>
-<%= @question.wrong_2 %>
-<%= @question.wrong_3 %>
-<%= @question.hint %>
+
+  <%= @question.correct %>
+  <%= @question.wrong_1 %>
+  <%= @question.wrong_2 %>
+  <%= @question.wrong_3 %>
+  <%= @question.hint %>
+  <video src="<%= rails_blob_path(@question.video) %>" type="video/mp4" controls></video>
