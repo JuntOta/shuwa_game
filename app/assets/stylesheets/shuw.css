@@ -121,6 +121,7 @@
 
 .main{
   height: 100vh;
+  background-image: url("star.jpg");
 }
 
 .header{
