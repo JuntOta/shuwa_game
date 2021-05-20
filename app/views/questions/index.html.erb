@@ -1,7 +1,27 @@
+  <%# <%= @question.correct %> %>
+  <%# <%= @question.wrong_1 %> %>
+  <%# <%= @question.wrong_2 %> %>
+  <%# <%= @question.wrong_3 %> %>
+  <%# <%= @question.hint %> %>
+  
 
-  <%= @question.correct %>
-  <%= @question.wrong_1 %>
-  <%= @question.wrong_2 %>
-  <%= @question.wrong_3 %>
-  <%= @question.hint %>
-  <video src="<%= rails_blob_path(@question.video) %>" type="video/mp4" controls></video>
+<div class = "main">
+  <div class = "header">
+  </div>
+
+  <div class = "video">
+    <video class = "video_view" src="<%= rails_blob_path(@question.video) %>" type="video/mp4" controls></video>
+  </div>
+
+  <div class = "hints">
+    <div class = "hint_title">
+      ヒント
+    </div>
+    <div class = hint>
+      <%= @question.hint %>
+    </div>
+  </div>
+
+  <div class = "questions">
+  </div>
+</div>

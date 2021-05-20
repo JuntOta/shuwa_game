@@ -33,3 +33,31 @@
   margin-right: 5vw;
   margin-top: 150px;
 }
+
+.header{
+  background-color: red;
+  height: 10vh;
+}
+
+.video{
+  background-color: royalblue;
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.video_view{
+  height: 340px;
+  width: 600px;
+}
+
+.hints{
+  background-color: salmon;
+  height: 10vh;
+}
+
+.questions{
+  background-color: seagreen;
+  height: 40vh;
+}
