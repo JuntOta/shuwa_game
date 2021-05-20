@@ -1,10 +1,3 @@
-  <%# <%= @question.correct %> %>
-  <%# <%= @question.wrong_1 %> %>
-  <%# <%= @question.wrong_2 %> %>
-  <%# <%= @question.wrong_3 %> %>
-  <%# <%= @question.hint %> %>
-  
-
 <div class = "main">
   <div class = "header">
   </div>
@@ -22,6 +15,16 @@
     </div>
   </div>
 
-  <div class = "questions">
+  <div class = "answers_list">
+    <div class = "answers" >
+      <div class = "left" >
+        <%= link_to "A： " + @question.correct, "#", class: :answer_a %>
+        <%= link_to "C： " + @question.wrong_2, "#", class: :answer_c %>
+      </div>
+      <div class = "right" >
+        <%= link_to "B： " + @question.wrong_1, "#", class: :answer_b %>
+        <%= link_to "D： " + @question.wrong_3, "#", class: :answer_d %>
+      </div>
+    </div>
   </div>
 </div>

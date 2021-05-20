@@ -1,20 +1,55 @@
-
+/* トップページ */
 .body,html{
   height: 100vh;
 }
 
-.main{
-  height: 100%;
+.main_top{
+  background-image: url("star.jpg");
+  height: 100vh;
 }
 
-.titile_contents{
+.title_contents{
   height: 70vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .title{
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  margin: 0;
+  padding: 0 20px;
+  font-size: 5em;
+  color: #ffd700;
+  text-shadow: 0 0 50px #ffd700;
+  letter-spacing: 5px;
+  -webkit-text-stroke-width: 7px;
+  -webkit-text-stroke-color: #ffd700;
+  -webkit-text-fill-color: #ffd700;
+}
+
+.title:after{
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0 20px;
+  z-index: -1;
+  color: #ffd700;
+  filter: blur(15px);
+}
+
+.title:before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #ffd700;
+  z-index: -2;
+  opacity: .3;
+  filter: blur(50px);
 }
 
 .items{
@@ -27,20 +62,26 @@
   justify-content: center;
 }
 
-
 .create_btn{
   text-align: right;
   margin-right: 5vw;
   margin-top: 150px;
 }
+/* トップページ */
+
+/* 問題画面 */
+
+.main{
+  height: 100vh;
+}
 
 .header{
-  background-color: red;
-  height: 10vh;
+  /* background-color: red; */
+  height: 5vh;
 }
 
 .video{
-  background-color: royalblue;
+  /* background-color: royalblue; */
   height: 40vh;
   display: flex;
   justify-content: center;
@@ -53,11 +94,65 @@
 }
 
 .hints{
-  background-color: salmon;
-  height: 10vh;
+  /* background-color: salmon; */
+  height: 15vh;
+  color: white;
+  padding-top: 50px;
 }
 
-.questions{
-  background-color: seagreen;
+.hint_title{
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.hint{
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.answers_list{
+  /* background-color: seagreen; */
   height: 40vh;
+}
+
+.answers{
+  font-size: 30px;
+  margin-left: 25%;
+  padding-top: 120px;
+  display: flex;
+}
+
+.left{
+  display: flex;
+  flex-direction: column;
+}
+
+.right{
+  display: flex;
+  flex-direction: column;
+  margin-left: 40%;
+}
+
+.answer_a{
+  text-decoration: none;
+  color: white;
+}
+
+.answer_b{
+  text-decoration: none;
+  color: white;
+}
+
+.answer_c{
+  padding-top: 35px;
+  text-decoration: none;
+  color: white;
+}
+
+.answer_d{
+  padding-top: 35px;
+  text-decoration: none;
+  color: white;
 }
