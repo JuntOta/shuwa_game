@@ -1,2 +1,129 @@
 /* <new.html.erb> */
 
+/* クイズ作成画面 */
+
+.main_create{
+  background-image: url("star2.jpg");
+  height: 100vh;
+}
+
+/* .header{
+  background-color: red;
+  height: 5vh;
+} */
+
+.page_title{
+  height: 10vh;
+  -webkit-text-stroke-width: 3px;
+}
+
+/* new question */
+
+h1 {
+  display: flex;
+  justify-content: center;
+  height: 56px;
+  font-size: 70px;
+  color: #ffc0cb;
+  animation: neonBlur 16s infinite;
+  font-weight: 300;
+}
+h1 > span:nth-child(1) {
+  opacity: .5;
+  font-weight: 800;
+}
+h1 > span:nth-child(2) {
+  animation: neonBlink 5s infinite;
+}
+h1 > span:nth-child(3) {
+  opacity: .4;
+}
+h1 > span:nth-child(4) {
+  animation: neonBlink 2s infinite;
+}
+
+@keyframes neonBlink {
+  0% { opacity: 1; }
+  10% { opacity: .6; }
+  12% { opacity: 1; }
+  15% { opacity: .4; }
+  17% { opacity: 1; }
+  18% { opacity: .3; }
+  19% { opacity: 1; }
+  89% { opacity: 1; }
+  91% { opacity: .7; }
+  94% { opacity: 1; }
+  100% { opacity: 1; }
+}
+
+@keyframes neonBlur {
+  0% { text-shadow: 0px 0px 25px #ffc0cb; }
+  50% { text-shadow: 0px 0px 75px #ffc0cb; filter: blur(0.5px) }
+  100% { text-shadow: 0px 0px 25px #ffc0cb; }
+}
+
+/* new question */
+
+.new_questions{
+  padding-top: 60px;
+  font-size: 30px;
+  height: 85vh;
+  text-align: center;
+  -webkit-text-stroke-width: 1px;
+}
+
+.new_video{
+  color: white;
+}
+
+.choice_video{
+  margin-top: 10px;
+}
+
+.new_answers_list{
+  margin-top: 40px;
+}
+
+.new_correct{
+  color: white;
+}
+
+.correct_box{
+  margin-top: 10px;
+  height: 50px;
+}
+
+.new_wrong{
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+
+.choice_wrong{
+  padding-left: 30px;
+}
+
+.wrong_box{
+  height: 50px;
+}
+
+.new_hint{
+  margin-top: 40px;
+  color: white;
+}
+
+.hint_box{
+  margin-top: 10px;
+  height: 150px;
+  width: 600px;
+}
+
+.submit{
+  margin-top: 40px;
+}
+
+.submit_btn{
+}
+
+/* クイズ作成画面 */
