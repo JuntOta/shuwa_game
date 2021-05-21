@@ -1,20 +1,49 @@
-<div class="qestion_create">
-  <div class="container">
-    <h3>クイズ作成</h3>
+<div class = "main_create">
+  <div class = "header">
+  </div>
+
+  <div class = page_title>
+    <%# <h1>
+    <span class="break-down">New</span>
+    <span>Q</span>
+    u
+    <span>e</span>
+    st
+    <span>io</span>
+    n
+    </h1> %>
+  </div>
+
+  <div class = "new_questions">
     <%= form_with(model: @question, local: true) do |f| %>
-      <%= f.label :video, "動画" %><br />
-      <%= f.file_field :video %>
-      <%= f.label :correct, "正解" %><br />
-      <%= f.text_area :correct, placeholder: "正解" %>
-      <%= f.label :wrong_1, "間違い" %><br />
-      <%= f.text_area :wrong_1, placeholder: "間違い" %>
-      <%= f.label :wrong_2, "間違い" %><br />
-      <%= f.text_area :wrong_2, placeholder: "間違い" %>
-      <%= f.label :wrong_3, "間違い" %><br />
-      <%= f.text_area :wrong_3, placeholder: "間違い" %>
-      <%= f.label :hint, "ヒント" %><br />
-      <%= f.text_area :hint, placeholder: "ヒント" %>
-      <%= f.submit "作成" %>
+      <div class = "new_video">
+        <%= f.label :video, "動画" %><br />
+        <%= f.file_field :video, class:"choice_video" %>
+      </div>
+
+      <div class = "new_answers_list">
+        <div class = "new_correct">
+          <%= f.label :correct, "正解" %><br />
+          <%= f.text_area :correct, class:"correct_box", placeholder: "例）おはよう" %>
+        </div>
+        <div class = "new_wrong">
+          <%= f.label :wrong_1, "間違い①：", class:"choice_wrong" %><br />
+          <%= f.text_area :wrong_1, class:"wrong_box", placeholder: "例）ただいま" %>
+          <%= f.label :wrong_2, "間違い②：", class:"choice_wrong" %><br />
+          <%= f.text_area :wrong_2, class:"wrong_box", placeholder: "例）さよなら" %>
+          <%= f.label :wrong_3, "間違い③：", class:"choice_wrong" %><br />
+          <%= f.text_area :wrong_3, class:"wrong_box", placeholder: "例）おやすみ" %>
+        </div>
+        <div class = "new_hint">
+          <%= f.label :hint, "ヒント" %><br />
+          <%= f.text_area :hint, class:"hint_box", placeholder: "例）朝起きたら交わす挨拶です。" %>
+        </div>
+      </div>
+      <div class = "submit">
+        <div class = "submit_btn">
+          <%= f.submit "作成" %>
+        </div>
+      </div>
     <% end %>
   </div>
 </div>
