@@ -12,6 +12,34 @@
   height: 5vh;
 } */
 
+.top_btn{
+  padding-top: 20px;
+  padding-left: 20px;
+}
+
+.top_white_btn{
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  -webkit-text-stroke-width: 1px;
+  position: relative;
+}
+
+.top_white_btn:after {
+  content: '';
+  background: white;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: scaleX(0);
+  transition: transform .5s ease;
+  height: 1px;
+  width: 100%;
+}
+.top_white_btn:hover:after {
+  transform: scaleX(1);
+}
+
 .page_title{
   height: 10vh;
   -webkit-text-stroke-width: 3px;
