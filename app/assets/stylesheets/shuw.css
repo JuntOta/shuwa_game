@@ -14,7 +14,7 @@
   height: 70vh;
 }
 
-/* タイトル */
+/* トップページタイトル */
 .title{
   position: absolute;
   top: 30%;
@@ -54,7 +54,7 @@
   opacity: .3;
   filter: blur(50px);
 }
-/* タイトル */
+/* トップページタイトル */
 
 .items{
   height: 100vh - 70vh;
@@ -64,29 +64,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.start_white_btn{
-  text-decoration: none;
-  font-size: 40px;
-  color: white;
-  -webkit-text-stroke-width: 2px;
-  position: relative;
-}
-
-.start_white_btn:after {
-  content: '';
-  background: white;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  transform: scaleX(0);
-  transition: transform .5s ease;
-  height: 1px;
-  width: 100%;
-}
-.start_white_btn:hover:after {
-  transform: scaleX(1);
 }
 
 .create_btn{
@@ -187,23 +164,25 @@
 }
 
 .answer_a{
+  padding-bottom: 35px;
   text-decoration: none;
   color: white;
 }
 
 .answer_b{
+  padding-bottom: 35px;
   text-decoration: none;
   color: white;
 }
 
 .answer_c{
-  padding-top: 35px;
+  padding-bottom: 35px;
   text-decoration: none;
   color: white;
 }
 
 .answer_d{
-  padding-top: 35px;
+  padding-bottom: 35px;
   text-decoration: none;
   color: white;
 }

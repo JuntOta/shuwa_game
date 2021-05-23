@@ -3,7 +3,7 @@
 /* クイズ作成画面 */
 
 .main_create{
-  background-image: url("star2.jpg");
+  background-image: url("star.jpg");
   height: 100vh;
 }
 
@@ -42,7 +42,6 @@
 
 .page_title{
   height: 10vh;
-  -webkit-text-stroke-width: 3px;
 }
 
 /* new question */
@@ -52,7 +51,7 @@ h1 {
   justify-content: center;
   height: 56px;
   font-size: 70px;
-  color: #ffc0cb;
+  color: white;
   animation: neonBlur 16s infinite;
   font-weight: 300;
 }
@@ -83,11 +82,11 @@ h1 > span:nth-child(4) {
   94% { opacity: 1; }
   100% { opacity: 1; }
 }
-
+/* #ffc0cb */
 @keyframes neonBlur {
-  0% { text-shadow: 0px 0px 25px #ffc0cb; }
-  50% { text-shadow: 0px 0px 75px #ffc0cb; filter: blur(0.5px) }
-  100% { text-shadow: 0px 0px 25px #ffc0cb; }
+  0% { text-shadow: 0px 0px 25px white; }
+  50% { text-shadow: 0px 0px 75px white; filter: blur(0.5px) }
+  100% { text-shadow: 0px 0px 25px white; }
 }
 
 /* new question */

@@ -16,14 +16,17 @@
   </div>
 
   <div class = "answers_list">
+    <% array = [(link_to "A： " + @question.correct, questions_path, class: :answer_a), (link_to "B： " + @question.wrong_2, shuwa_index_path, class: :answer_b),
+    (link_to "C： " + @question.wrong_1, shuwa_index_path, class: :answer_c), (link_to "D： " + @question.wrong_3, shuwa_index_path, class: :answer_d)] %>
+    <% array.shuffle! %>
     <div class = "answers" >
       <div class = "left" >
-        <%= link_to "A： " + @question.correct, questions_path, class: :answer_a %>
-        <%= link_to "C： " + @question.wrong_2, shuwa_index_path, class: :answer_c %>
+        <%= array[0] %>
+        <%= array[1] %>
       </div>
       <div class = "right" >
-        <%= link_to "B： " + @question.wrong_1, shuwa_index_path, class: :answer_b %>
-        <%= link_to "D： " + @question.wrong_3, shuwa_index_path, class: :answer_d %>
+        <%= array[2] %>
+        <%= array[3] %>
       </div>
     </div>
   </div>

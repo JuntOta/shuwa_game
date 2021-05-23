@@ -1,0 +1,51 @@
+
+/************************************************
+0.  Import
+************************************************/
+@import url("https://fonts.googleapis.com/css2?family=Questrial&display=swap");
+
+$button-color: white;
+$second-color: black;
+
+/************************************************
+1.  LIEN et BOUTON
+************************************************/
+
+
+.start_white_btn {
+    -webkit-text-stroke-width: 2px;
+    position: relative;
+    color: $button-color;
+    font-size: 40px;
+    -webkit-text-stroke-width: 2px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-decoration: none;
+    overflow: hidden;
+    transition: 0.2s;
+    &:visited {
+        color: $button-color;
+    }
+    &:hover {
+        color: black;
+        background: $button-color;
+        border-radius: 3px;
+        box-shadow: 0 0 10px $button-color, 0 0 40px $button-color, 0 0 80px $button-color;
+        transition-delay: 500ms;
+    }
+}
+
+.start_white_btn:after {
+  content: '';
+  background: white;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: scaleX(0);
+  transition: transform .5s ease;
+  height: 1px;
+  width: 100%;
+}
+.start_white_btn:hover:after {
+  transform: scaleX(1);
+}
