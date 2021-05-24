@@ -31,21 +31,21 @@ $second-color: black;
         background: $button-color;
         border-radius: 3px;
         box-shadow: 0 0 10px $button-color, 0 0 40px $button-color, 0 0 80px $button-color;
-        transition-delay: 500ms;
+        transition-delay: 50ms;
     }
 }
 
-.start_white_btn:after {
-  content: '';
-  background: white;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  transform: scaleX(0);
-  transition: transform .5s ease;
-  height: 1px;
-  width: 100%;
-}
-.start_white_btn:hover:after {
-  transform: scaleX(1);
-}
+// .start_white_btn:after {
+//   content: '';
+//   background: white;
+//   position: absolute;
+//   bottom: 0;
+//   left: 0;
+//   transform: scaleX(0);
+//   transition: transform .5s ease;
+//   height: 1px;
+//   width: 100%;
+// }
+// .start_white_btn:hover:after {
+//   transform: scaleX(1);
+// }
