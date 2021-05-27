@@ -1,4 +1,19 @@
 <div class = "main_top">
+<%# ユーザー登録ボタンの配置 %>
+  <div header>
+    <div class = "header">
+        <% if user_signed_in? %>
+          <div class="logout">
+            <%= link_to "ログアウト", destroy_user_session_path, method: :delete %>
+          </div>
+        <% else %>
+          <div class="login">
+            <%= link_to "ログイン", new_user_session_path, class: "login_btn" %>
+            <%= link_to "新規登録", new_user_registration_path, class: "new_user_btn" %>
+          </div>
+        <% end %>
+    </div>
+  </div>
   <div class = "title_contents">
     <div class="rainbow_title">SHUWA WE GO !!</div>
   </div>

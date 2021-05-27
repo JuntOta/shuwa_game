@@ -10,8 +10,31 @@
   height: 100vh;
 }
 
+.header{
+  height: 10vh;
+}
+
+.login{
+  text-align: right;
+  padding-right: 20px;
+  padding-top: 20px;
+  font-size: 20px;
+  -webkit-text-stroke-width: 1px;
+}
+
+.login_btn{
+  margin-right: 20px;
+  text-decoration: none;
+  color: white;
+}
+
+.new_user_btn{
+  text-decoration: none;
+  color: white;
+}
+
 .title_contents{
-  height: 70vh;
+  height: 60vh;
 }
 
 /* トップページタイトル */
@@ -57,10 +80,11 @@
 /* トップページタイトル */
 
 .items{
-  height: 100vh - 70vh;
+  height: 35vh;
 }
 
 .start_btn{
+  padding-top: 70px;
   display: flex;
   align-items: center;
   justify-content: center;
