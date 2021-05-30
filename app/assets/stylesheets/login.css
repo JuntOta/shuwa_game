@@ -1,0 +1,14 @@
+.login_items{
+  height: 85vh;
+}
+
+.page_title{
+  color: white;
+}
+
+.login_items{
+  color: white;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+}
