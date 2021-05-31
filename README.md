@@ -62,3 +62,4 @@ deviceを使用して、ユーザー登録ができるようにします。
 <br>
 
 # DB設計
+![ER図](https://user-images.githubusercontent.com/76102818/120169294-c1c90300-c23a-11eb-9acf-17272815ea5d.png)

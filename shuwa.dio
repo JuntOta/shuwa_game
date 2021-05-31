@@ -1,6 +1,6 @@
 <mxfile>
     <diagram id="jbGmL9YxVnOamzZTJySp" name="ページ1">
-        <mxGraphModel dx="1250" dy="785" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+        <mxGraphModel dx="766" dy="785" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -10,11 +10,11 @@
                 <mxCell id="13" value=" correct (text/null:false)&#10; wrong_1 (text/null:false)&#10; wrong_2 (text/null:false)&#10; wrong_3 (text/null:false)&#10; hint (text/null:false)" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=19;" parent="12" vertex="1">
                     <mxGeometry y="50" width="350" height="130" as="geometry"/>
                 </mxCell>
-                <mxCell id="15" value="usersテーブル" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;align=center;fontSize=23;" vertex="1" parent="1">
-                    <mxGeometry x="440" y="41" width="350" height="110" as="geometry"/>
+                <mxCell id="15" value="usersテーブル" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;align=center;fontSize=23;" parent="1" vertex="1">
+                    <mxGeometry x="440" y="41" width="350" height="130" as="geometry"/>
                 </mxCell>
-                <mxCell id="16" value=" nickname (string/null:false)&#10; email (string/null:false)" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=19;" vertex="1" parent="15">
-                    <mxGeometry y="50" width="350" height="60" as="geometry"/>
+                <mxCell id="16" value=" nickname (string/null:false)&#10; email (string/null:false, unique:true)&#10; encrypted_password(string/null:false)" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=19;" parent="15" vertex="1">
+                    <mxGeometry y="50" width="350" height="80" as="geometry"/>
                 </mxCell>
             </root>
         </mxGraphModel>
