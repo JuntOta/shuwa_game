@@ -104,6 +104,7 @@ h1 > span:nth-child(4) {
 
 .choice_video{
   margin-top: 10px;
+  font-size: 30px;
 }
 
 .new_answers_list{
@@ -117,6 +118,7 @@ h1 > span:nth-child(4) {
 .correct_box{
   margin-top: 10px;
   height: 50px;
+  font-size: 30px;
 }
 
 .new_wrong{
@@ -132,6 +134,7 @@ h1 > span:nth-child(4) {
 
 .wrong_box{
   height: 50px;
+  font-size: 30px;
 }
 
 .new_hint{
@@ -143,6 +146,7 @@ h1 > span:nth-child(4) {
   margin-top: 10px;
   height: 150px;
   width: 600px;
+  font-size: 30px;
 }
 
 .submit{
@@ -150,6 +154,7 @@ h1 > span:nth-child(4) {
 }
 
 .submit_btn{
+  font-size: 30px;
 }
 
 /* クイズ作成画面 */
